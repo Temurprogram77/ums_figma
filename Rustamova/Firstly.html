@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First one</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="bg-emerald-600 text-white text-center py-2">
+    ДОСТАВКА В ЛЮБОЙ ГОРОД УКРАИНЫ
+</div>
+
+<!-- Header -->
+<header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Top Bar -->
+        <div class="flex justify-between items-center py-3 border-b">
+            <!-- Left section (Phone, Callback button and Working hours) -->
+            <div class="flex items-center space-x-6">
+                <!-- Phone icon and number -->
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-phone-alt text-gray-700"></i> <!-- Phone Icon -->
+                    <a href="tel:+380664179583" class="text-gray-700">+380 66 417 95 83</a>
+                </div>
+
+                <!-- Callback button -->
+                <button class="text-sm text-black-600 border rounded px-3 py-1">ОБРАТНЫЙ ЗВОНОК</button>
+
+                <!-- Working hours -->
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-clock text-gray-700"></i> <!-- Clock Icon -->
+                    <span class="text-black-600">Пн-Пт: 10-19</span>
+                </div>
+            </div>
+
+            <!-- Right section (Current users and Language selection) -->
+            <div class="flex items-center space-x-6">
+                <!-- Current users on the website -->
+                <span class="text-sm text-gray-600 ">СЕЙЧАС НА САЙТЕ: 23 ПОКУПАТЕЛЯ</span>
+
+                <!-- Language selection -->
+                <div class="flex items-center space-x-2">
+                    <a href="#" id="ua-link" class="font-medium" onclick="toggleLanguage('UA')">UA</a>
+                    <span class="text-gray-300">|</span>
+                    <a href="#" id="ru-link" class="text-black-500" onclick="toggleLanguage('RU')">RU</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript for Language Switch -->
+        <script>
+            function toggleLanguage(currentLanguage) {
+                const uaLink = document.getElementById('ua-link');
+                const ruLink = document.getElementById('ru-link');
+                
+                if (currentLanguage === 'UA') {
+                    uaLink.classList.remove('text-gray-500');
+                    uaLink.classList.add('text-gray-700');
+                    ruLink.classList.remove('text-gray-700');
+                    ruLink.classList.add('text-gray-500');
+                } else if (currentLanguage === 'RU') {
+                    ruLink.classList.remove('text-gray-500');
+                    ruLink.classList.add('text-gray-700');
+                    uaLink.classList.remove('text-gray-700');
+                    uaLink.classList.add('text-gray-500');
+                }
+            }
+        </script>
+
+        <!-- Navigation -->
+        <nav class="flex justify-between py-4">
+            <!-- Left navigation links -->
+            <div class="flex space-x-8">
+                <div class="relative">
+                    <a href="#" class="text-red-500 font-medium inline-flex items-center" id="catalogLink">
+                        КАТАЛОГ
+                        <span class="ml-1 text-xs inline-block">&#9660;</span> <!-- Downward arrow -->
+                    </a>
+    
+                    <!-- Dropdown menu (hidden by default) -->
+                    <div class="absolute hidden mt-2 w-48 bg-white shadow-sm rounded-md z-10" id="dropdownMenu">
+                        <div class="py-1">
+                            <a href="#" class="block px-3 py-1 text-xs text-gray-700 hover:bg-gray-100">Энурезные будильники</a>
+                            <a href="#" class="block px-3 py-1 text-xs text-gray-700 hover:bg-gray-100">Контакты</a>
+                            <a href="#" class="block px-3 py-1 text-xs text-gray-700 hover:bg-gray-100">Отзывы</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="text-gray-700">ГАРАНТИЯ</a>
+                <a href="#" class="text-gray-700">ОПЛАТА И ДОСТАВКА</a>
+                <a href="#" class="text-gray-700">ОТЗЫВЫ</a>
+                <a href="#" class="text-gray-700">АКЦИИ</a>
+                <a href="#" class="text-gray-700">СТАТЬИ</a>
+                <a href="#" class="text-gray-700">О НАС</a>
+                <a href="#" class="text-gray-700">КОНТАКТЫ</a>
+            </div>
+
+            <!-- Right section (Catalog with dropdown) -->
+           
+        </nav>
+
+        <!-- JavaScript for dropdown toggle -->
+        <script>
+          // Get elements
+          const catalogLink = document.getElementById('catalogLink');
+          const dropdownMenu = document.getElementById('dropdownMenu');
+
+          // Toggle the dropdown menu on click
+          catalogLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default action of the link
+            dropdownMenu.classList.toggle('hidden'); // Toggle visibility of the dropdown menu
+          });
+
+          // Close the dropdown menu if clicked outside
+          document.addEventListener('click', function(event) {
+            if (!event.target.closest('#catalogLink') && !event.target.closest('#dropdownMenu')) {
+              dropdownMenu.classList.add('hidden'); // Hide dropdown if clicked outside
+            }
+          });
+        </script>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<div class="relative bg-gradient-to-r from-teal-700 to-emerald-500">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+        <div class="flex justify-between items-center">
+            <div class="text-white max-w-lg">
+                <h1 class="text-5xl font-bold mb-6">Энурузный будильник</h1>
+                <p class="text-2xl">- эффективное средство при энурезе</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
