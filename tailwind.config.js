@@ -1,4 +1,4 @@
-// / @type {import('tailwindcss').Config} */
+//  @type {import('tailwindcss').Config} 
 module.exports = {
   content: ["./public//*.{html,js}"],
   theme: {
@@ -6,7 +6,12 @@ module.exports = {
       backgroundColor: {
         "body-bg": "#ECECEC",
       },
-      
+      textColor:{
+        "text-orange": "#F3761B",
+        "text-dark": "#000",
+        "text-green": "#007F00",
+        "text-white": "#fff",
+      }
     },
   },
   plugins: [],
