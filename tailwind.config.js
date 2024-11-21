@@ -11,7 +11,7 @@ module.exports = {
         "text-dark": "#000",
         "text-green": "#007F00",
         "text-white": "#fff",
-      }
+      },
     },
   },
   plugins: [],
