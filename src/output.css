@@ -866,6 +866,22 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[url\] {
+  background-color: url;
+}
+
+.bg-\[url-\(\)\] {
+  background-color: url-();
+}
+
+.bg-\[url-\(\'\'\)\] {
+  background-color: url-('');
+}
+
+.bg-\[url-\(\'\/assets\/\'\)\] {
+  background-color: url-('/assets/');
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
