@@ -753,6 +753,10 @@ video {
   height: 216px;
 }
 
+.h-\[250px\] {
+  height: 250px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -795,6 +799,10 @@ video {
 
 .w-\[600px\] {
   width: 600px;
+}
+
+.w-\[20px\] {
+  width: 20px;
 }
 
 .max-w-7xl {
@@ -876,6 +884,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
