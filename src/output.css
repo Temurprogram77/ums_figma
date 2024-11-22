@@ -1028,6 +1028,10 @@ video {
   --tw-gradient-to: #2FA365 var(--tw-gradient-to-position);
 }
 
+.to-\[\] {
+  --tw-gradient-to:  var(--tw-gradient-to-position);
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
