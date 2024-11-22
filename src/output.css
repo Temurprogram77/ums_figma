@@ -693,16 +693,16 @@ video {
   height: 3rem;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .h-\[570px\] {
   height: 570px;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[100px\] {
-  height: 100px;
 }
 
 .w-36 {
@@ -870,36 +870,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\] {
-  background-color: url;
-}
-
-.bg-\[url-\(\)\] {
-  background-color: url-();
-}
-
-.bg-\[url-\(\'\'\)\] {
-  background-color: url-('');
-}
-
-.bg-\[url-\(\'\/assets\/\'\)\] {
-  background-color: url-('/assets/');
-}
-
-.bg-\[url-\(\'\/assets\/happy-family\.png\'\)\] {
-  background-color: url-('/assets/happy-family.png');
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\/assets\/happy-family\.png\'\)\] {
-  background-image: url('/assets/happy-family.png');
-}
-
-.bg-\[url\(\'\/assets\/img\/happy-family\.png\'\)\] {
-  background-image: url('/assets/img/happy-family.png');
 }
 
 .from-teal-700 {
@@ -910,14 +882,6 @@ video {
 
 .to-emerald-500 {
   --tw-gradient-to: #10b981 var(--tw-gradient-to-position);
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .object-cover {
