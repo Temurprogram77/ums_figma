@@ -677,6 +677,14 @@ video {
   margin-top: 2rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -745,6 +753,14 @@ video {
   width: 100%;
 }
 
+.w-\[380px\] {
+  width: 380px;
+}
+
+.w-\[390px\] {
+  width: 390px;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -780,6 +796,10 @@ video {
 
 .max-w-\[\] {
   max-width: ;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .flex-1 {
